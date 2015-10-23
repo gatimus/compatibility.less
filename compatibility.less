@@ -24,6 +24,11 @@
 
 // B
 
+.backface-visibility(@mode) {
+  -webkit-backface-visibility: @mode;
+          backface-visibility: @mode;
+}
+
 .border-bottom-left-radius(@size) {
   -webkit-border-bottom-left-radius: @size;
       -moz-border-radius-bottomleft: @size;
@@ -163,6 +168,12 @@
 // S
 
 // T
+
+.tab-size(@size) {
+  -moz-tab-size: @size;
+    -o-tab-size: @size;
+       tab-size: @size;
+}
 
 .transform(@args) {
   -webkit-transform: @args;
