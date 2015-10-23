@@ -50,7 +50,7 @@
 
 .border-top-right-radius(@size) {
   -webkit-border-top-right-radius: @size;
-      -moz-border-radius-topmright: @size;
+      -moz-border-radius-topright: @size;
           border-top-right-radius: @size;
 }
 
@@ -117,6 +117,21 @@
 
 // H
 
+.hyphens(@mode) {
+  -webkit-hyphens: @mode;
+     -moz-hyphens: @mode;
+      -ms-hyphens: @mode;
+          hyphens: @mode;
+}
+
+.hyphens(@mode) when (@mode = auto) {
+  .word-break(break-all);
+  -webkit-hyphens: @mode;
+     -moz-hyphens: @mode;
+      -ms-hyphens: @mode;
+          hyphens: @mode;
+}
+
 // I
 
 // J
@@ -160,6 +175,11 @@
 // V
 
 // W
+
+.word-break(@mode) {
+  -ms-word-break: @mode;
+      word-break: @mode;
+}
 
 // X
 
